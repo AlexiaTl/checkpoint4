@@ -1,3 +1,16 @@
 body {
-    background-color: red;
+    background-color: lightgrey;
+}
+
+.navbar{
+    position: relative;
+    background-color: black;
+    height: 130px;
+}
+
+.navbar-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -75px !important;
+    display: block;
 }
