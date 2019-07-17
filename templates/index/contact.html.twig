@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Wild Circus - Contact{% endblock %}
+
+{% block body %}
+    <h1 class="mx-5 my-5">Contact us</h1>
+
+    <div class="container-contact mb-5">
+        <form action="">
+            <label for="fname">Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Last name and first name">
+
+            <label for="sujet">Subject</label>
+            <input type="text" id="sujet" name="sujet" placeholder="The subject of your message">
+
+            <label for="emailAddress">Email</label>
+            <input id="emailAddress" type="email" name="email" placeholder="Your email address">
+
+            <label for="subject">Message</label>
+            <textarea id="subject" name="subject" placeholder="Your message" style="height:200px"></textarea>
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+
+
+    <a href="{{ path('home') }}" class="mx-5 my-5 back-link">
+      Back to homepage
+    </a>
+
+{% endblock %}
