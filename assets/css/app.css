@@ -2,6 +2,8 @@ body {
     background-color: lightgrey;
 }
 
+/* NAVBAR */
+
 .navbar{
     position: relative;
     background-color: black;
@@ -15,11 +17,23 @@ body {
     display: block;
 }
 
+.nav-link{
+    color: white;
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: #E6C47C;
+    font-weight: bold;
+}
+
+/* CARDS */
+
 .flip-card {
     background-color: transparent;
     width: 300px;
     height: 300px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px;
 }
 
 .flip-card-inner {
@@ -49,4 +63,16 @@ body {
     background-color: white;
     color: #EB5F4B;
     transform: rotateY(180deg);
+}
+
+/* PRICES */
+.back-link{
+    color: #696969;
+    font-weight: bold;
+}
+
+.back-link:hover{
+    color: #CD5C5C;
+    font-weight: bold;
+    text-decoration:none;
 }

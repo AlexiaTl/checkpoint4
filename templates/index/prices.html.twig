@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Wild Circus - Prices{% endblock %}
+
+{% block body %}
+
+    <h1 class="mt-5 text-center">Prices</h1>
+
+    <div class="container">
+        <table class="table table-hover my-5">
+            <thead>
+                <tr>
+                <th scope="col"></th>
+                {% for public in publics %}
+                <th scope="col">{{public.name}}</th>
+                {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">Weeks excluding Wednesday</th>
+                <td>10,00 $</td>
+                <td>8,00 $</td>
+                <td>6,00 $</td>
+                <td>4,00 $</td>
+                </tr>
+                <tr>
+                <th scope="row">Weekend and Wednesday</th>
+                <td>15,00 $</td>
+                <td>13,00 $</td>
+                <td>11,00 $</td>
+                <td>9,00 $</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <a href="{{ path('home') }}" class="ml-5 back-link">
+      Back to homepage
+    </a>
+
+{% endblock %}
