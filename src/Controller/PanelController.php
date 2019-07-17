@@ -25,7 +25,7 @@ class PanelController extends AbstractController
 
         return $this->render(
                 'index/panel.html.twig',
-                ['panel' => $panel]
+                ['panels' => $panel]
         );
     }
 }
