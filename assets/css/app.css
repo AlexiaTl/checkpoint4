@@ -2,6 +2,10 @@ body {
     background-color: lightgrey;
 }
 
+h1 {
+    color: #3A6F79;
+}
+
 /* NAVBAR */
 
 .navbar{
@@ -65,7 +69,9 @@ body {
     transform: rotateY(180deg);
 }
 
+
 /* PRICES */
+
 .back-link{
     color: #696969;
     font-weight: bold;
@@ -75,4 +81,12 @@ body {
     color: #CD5C5C;
     font-weight: bold;
     text-decoration:none;
+}
+
+
+/* GALLERY */
+
+.responsive {
+    width: 100%;
+    height: auto;
 }
